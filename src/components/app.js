@@ -1,4 +1,5 @@
 // import react and component
+// import BookList 
 
 // export App class extending Component
 	// render
@@ -6,11 +7,14 @@
 			// div		
 
 import React, { Component } from 'react';
+import BookList from '../containers/show-list'
 
 export default class App extends Component{
 	render(){
 		return(
-			<div>Media Library</div>
+			<div>
+				<BookList />
+			</div>
 		);
 	}
 } 
