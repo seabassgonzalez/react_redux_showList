@@ -1,7 +1,7 @@
-// simple function that 
+// export simple function that 
 	// returns an array of books
 
-function(){
+export default function(){
 	return [
 		{ title: 'Seinfeld' },
 		{ title: 'Rick and Morty' },
