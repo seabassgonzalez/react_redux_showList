@@ -1,7 +1,10 @@
 // import React, Component
 
-// export Booklist class extending Component
+// export Showlist class extending Component
 	// renderList()
+		// 	return this.props.shows .map()
+			// return
+				// li with key className list-group-item {each book.title}
 	// renders
 		// return
 			// ul classname list-group col-sm-4
