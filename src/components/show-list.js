@@ -11,8 +11,14 @@
 			// ul classname list-group col-sm-4
 				// call renderList() here
 
+// function map state to props(state) to tie together with redux
+	// 	returns
+		// 	key shows: value array of shows 
+
+// export default connect mapStateToProps and ShowList 
+
 import React, { Component } from 'react';
-import { connect } from 'react-redux''
+import { connect } from 'react-redux';
 
 class ShowList extends Component {
 	renderList(){
@@ -32,3 +38,10 @@ class ShowList extends Component {
 	}	
 }
 
+function mapStateToProps(state){
+	return {
+		shows: state.shows
+	};
+}
+
+export default connect(mapStateToProps)(BookList);

@@ -10,6 +10,12 @@
 			// ul classname list-group col-sm-4
 				// call renderList() here
 
+// Map state to props to track state
+	// return will show up as props inside ShowList
+		// shows: state.shows
+
+// export results of map state to props
+
 import React, { Component } from 'react';
 
 export default class ShowList extends Component {
@@ -30,3 +36,10 @@ export default class ShowList extends Component {
 	}	
 }
 
+function mapStateToProps(state){
+	return {
+		shows: state.shows
+	}
+}
+
+export default connect(mapStateToProps)(ShowList);
