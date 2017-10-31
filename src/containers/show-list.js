@@ -17,8 +17,9 @@
 // export results of map state to props
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class ShowList extends Component {
+class ShowList extends Component {
 	renderList(){
 		return this.props.shows.map((show)=> {
 			return(
@@ -29,7 +30,7 @@ export default class ShowList extends Component {
 
 	render(){
 		return (
-			<ul className-"list-group col-sm-4">
+			<ul className="list-group col-sm-4">
 				{this.renderList()}
 			</ul>
 		)

@@ -7,13 +7,13 @@
 			// div		
 
 import React, { Component } from 'react';
-import BookList from '../containers/show-list'
+import ShowList from '../containers/show-list';
 
 export default class App extends Component{
 	render(){
 		return(
 			<div>
-				<BookList />
+				<ShowList />
 			</div>
 		);
 	}
