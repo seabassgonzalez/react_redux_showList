@@ -4,7 +4,9 @@
 // class ShowDetail extending component
 	// render
 		// return
-			// div show detail string
+			// div 
+				// h3 details text
+				// div referencing this.props.show.title active show
 
 // define mapStateToProps to connect to redux
 	// returns object
@@ -18,7 +20,10 @@ import { connect } from 'react-redux';
 export default class ShowDetail extends Component {
 	render(){
 		return(
-			<div>Show Detail</div>
+			<div>
+				<h3>Details for:</h3>
+				<div>{this.props.show.title}</div>
+			</div>
 		);
 	}
 }
