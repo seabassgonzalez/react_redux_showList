@@ -3,6 +3,8 @@
 
 // class ShowDetail extending component
 	// render
+		// if statement to check if this.props.show exists
+			// if not return div text saying to select a show to start
 		// return
 			// div 
 				// h3 details text
@@ -19,6 +21,11 @@ import { connect } from 'react-redux';
 
 export default class ShowDetail extends Component {
 	render(){
+		if(!this.props.show){
+			return(
+				<div>Select a show to start.</div>;
+			)
+		}
 		return(
 			<div>
 				<h3>Details for:</h3>
