@@ -3,9 +3,9 @@
 
 export default function(){
 	return [
-		{ title: 'Seinfeld' },
-		{ title: 'Rick and Morty' },
-		{ title: 'Curb Your Enthusiasm' },
-		{ title: 'The Orville' }
+		{ title: 'Seinfeld', episodes: 180},
+		{ title: 'Rick and Morty', episodes: 31},
+		{ title: 'Curb Your Enthusiasm', episodes: 90},
+		{ title: 'The Orville', episodes: 4}
 	]
 }

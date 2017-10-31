@@ -29,7 +29,8 @@ export default class ShowDetail extends Component {
 		return(
 			<div>
 				<h3>Details for:</h3>
-				<div>{this.props.show.title}</div>
+				<div>Title: {this.props.show.title}</div>
+				<div>Number of Episodes: {this.props.show.episodes}</div>
 			</div>
 		);
 	}
