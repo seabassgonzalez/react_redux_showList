@@ -7,7 +7,7 @@
 	// renderList()
 		// 	return this.props.shows .map()
 			// return
-				// li with key className list-group-item {each book.title}
+				// li with key className, onClick function to update selected show, list-group-item {each show.title}
 	// renders
 		// return
 			// ul classname list-group col-sm-4
@@ -20,7 +20,7 @@
 // function mapDispatchToProps takes dispatch as an argument
 	// return bindActionCreators passing it an object { selectShow: selectShow} (the action creator we imported above), dispatch
 
-// export results of map state to props, mapDispatchToProps, and BookList
+// export results of map state to props, mapDispatchToProps, and ShowList
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -31,7 +31,7 @@ class ShowList extends Component {
 	renderList(){
 		return this.props.shows.map((show)=> {
 			return(
-				<li key={show.title} className="list-group-item">{show.title}</li>
+				<li key={show.title} onClick={()=> this.props.selectShow(show)} className="list-group-item">{show.title}</li>
 			);
 		});
 	}
