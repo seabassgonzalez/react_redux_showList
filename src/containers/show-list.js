@@ -46,13 +46,19 @@ class ShowList extends Component {
 }
 
 function mapStateToProps(state){
+	// Whatever is returned will show up as props inside of ShowList
 	return {
 		shows: state.shows
 	}
 }
 
 function mapDispatchToProps(dispatch){
+	// Anything returned will end up as props on ShowList container
+	// Whenever selectShow is called, the result passed to all reducers
 	return bindActionCreators({ selectShow: selectShow}, dispatch)
+	// can call this.props.selectShow because of this key to call action creator
 }
 
-export default connect(mapStateToProps)(ShowList);
+// Promote ShowList from component to container needs to know about new 
+// dispatch method selectShow, make it available as a prop
+export default connect(mapStateToProps, mapDispatchToProps)(ShowList);
