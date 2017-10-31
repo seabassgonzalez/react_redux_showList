@@ -1,6 +1,6 @@
 // import React, Component
 // import connect from react-redux
-// import selectBook from actions
+// import selectShow from actions
 // import bindActionCreators from redux to flow action created by action creator to reducers
 
 // export Showlist class extending Component
@@ -18,13 +18,13 @@
 		// shows: state.shows
 
 // function mapDispatchToProps takes dispatch as an argument
-	// return bindActionCreators passing it an object { selectBook: selectBook } (the action creator we imported above), dispatch
+	// return bindActionCreators passing it an object { selectShow: selectShow} (the action creator we imported above), dispatch
 
 // export results of map state to props, mapDispatchToProps, and BookList
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectBook } from '../actions/index';
+import { selectShow } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class ShowList extends Component {
@@ -51,5 +51,8 @@ function mapStateToProps(state){
 	}
 }
 
+function mapDispatchToProps(dispatch){
+	return bindActionCreators({ selectShow: selectShow}, dispatch)
+}
 
 export default connect(mapStateToProps)(ShowList);
