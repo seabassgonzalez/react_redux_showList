@@ -45,8 +45,8 @@ class ShowList extends Component {
 	}	
 }
 
-function mapStateToProps(state){
 	// Whatever is returned will show up as props inside of ShowList
+function mapStateToProps(state){
 	return {
 		shows: state.shows
 	}
