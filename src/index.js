@@ -5,6 +5,9 @@
     // if type is SHOW_SELECTED
       // return action payload
   // all else return state
+
+  // testing git config
+  
 export default function(state = null, action){
   switch(action.type){
     case'SHOW_SELECTED':
