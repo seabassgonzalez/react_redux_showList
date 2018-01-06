@@ -23,7 +23,7 @@ class ShowDetail extends Component {
 	render(){
 		if(!this.props.show){
 			return(
-				<div>Select a show to start.</div>; // comment to clean up sublime syntax highlighting
+				<div>Select a show to start.</div> 
 			)
 		}
 		return(

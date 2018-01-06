@@ -7,7 +7,7 @@
 	// active show is activeShow
 // export rootReducer
 
-import { combine Reducers } from 'redux';
+import { combineReducers } from 'redux';
 import ShowsReducer from './reducer_shows';
 import ActiveShow from './reducer_active_show';
 

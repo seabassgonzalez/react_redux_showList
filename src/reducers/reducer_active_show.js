@@ -5,3 +5,11 @@
 		// case SHOW_SELECTED
 			// return action.payload
 	// base case return state in case we don't care about current action
+
+export default function(state = null, action){
+	switch(action.type){
+		case 'SHOW_SELECTED':
+			return action.payload
+	}
+	return state
+}
