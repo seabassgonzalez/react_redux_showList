@@ -6,6 +6,7 @@
 
 // import reducers
 // import App
+// import Home
 
 // const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -21,6 +22,7 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 import reducers from './reducers';
 import App from './components/app';
+import Home from './components/home';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -28,7 +30,8 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
     	<div>
-    		<Route path='/' component={App} />
+    		<Route path='/list' component={App} />
+    		<Route path='/' component={Home} />
     	</div>
     </BrowserRouter>
   </Provider> // comment to cleanup sublime syntax highlighting

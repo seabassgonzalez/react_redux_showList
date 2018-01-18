@@ -7,13 +7,13 @@
 
 // export default Home
 
-import React, { Componet } from 'react';
+import React, { Component } from 'react';
 
 class Home extends Component{
 	render(){
-		return{
+		return(
 			<div>Home</div>
-		};
+		);
 	}
 }
 
