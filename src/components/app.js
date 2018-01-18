@@ -8,7 +8,8 @@
 			// div
 				// ShowList
 				// ShowDetail
-
+				// Link component styled as button to link to addShow
+				
 import React, { Component } from 'react';
 import ShowList from '../containers/show-list';
 import ShowDetail from '../containers/show-detail';

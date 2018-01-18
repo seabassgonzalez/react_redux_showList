@@ -12,6 +12,7 @@
 		// return
 			// ul classname list-group col-sm-4
 				// call renderList() here
+			// Link component styled as button to link to addShow
 
 // Map state to props to track state
 	// return will show up as props inside ShowList
@@ -41,6 +42,7 @@ class ShowList extends Component {
 			<ul className="list-group col-sm-4">
 				{this.renderList()}
 			</ul>
+
 		)
 	}	
 }
